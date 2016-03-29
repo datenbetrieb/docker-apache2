@@ -18,7 +18,7 @@ RUN a2enmod rewrite
 
 # add composer
 RUN curl -sS https://getcomposer.org/installer | php && \
-    mv composer.phar /usr/local/bin/composer && \
+    mv composer.phar /usr/local/bin/composer
 
 # forward request and error logs to docker log collector
 #RUN ln -sf /dev/stdout /var/log/apache2/access.log
