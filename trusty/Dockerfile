@@ -14,7 +14,7 @@ RUN apt-get update && \
 RUN a2dissite default
 
 # Enable rewrite module
-RUN a2enmod rewrite
+RUN a2enmod rewrite expires
 
 # add composer
 RUN curl -sS https://getcomposer.org/installer | php && \
