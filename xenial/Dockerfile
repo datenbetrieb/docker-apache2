@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ## Remove default VirtualHost
-RUN a2dissite default
+RUN rm -rf /etc/apache2/sites-enabled/000-default.con
 
 # Enable rewrite module
 RUN a2enmod rewrite expires
