@@ -4,7 +4,7 @@ MAINTAINER Peter Niederlag "peter.niederlag@datenbetrieb.de"
 
 # add apt packages for apache2 and php5
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends apache2 apache2-mpm-prefork && \
+    apt-get install -y --no-install-recommends apache2 && \
     apt-get install -y --no-install-recommends libapache2-mod-php5 && \
     apt-get install -y --no-install-recommends php5-cli php5-gd php5-json php5-ldap php5-mcrypt php5-sqlite php5-xdebug php5-curl php5-xsl php5-mysql && \
     apt-get clean && \
